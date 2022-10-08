@@ -61,6 +61,7 @@ export default function App() {
         return
 
       case '%':
+        setCurrentNumber( (currentNumber/100).toString())
         return
     }
 
