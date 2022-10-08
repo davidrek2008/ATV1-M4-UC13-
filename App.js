@@ -42,6 +42,7 @@ export default function App() {
     }
     switch (buttonPressed) {
       case 'DEL':
+        console.log(currentNumber);
         setCurrentNumber(currentNumber.substring(0, (currentNumber.length - 1)))
         return
 
@@ -56,7 +57,7 @@ export default function App() {
         return
 
       case '+/-':
-        setCurrentNumber( -currentNumber)
+        setCurrentNumber( (- currentNumber).toString())
         return
 
       case '%':
